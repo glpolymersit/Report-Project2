@@ -5,9 +5,14 @@
   <DataSets />
   <Reports>
     <ProjectItem>
-      <Name>Report1.rdl</Name>
-      <FullPath>Report1.rdl</FullPath>
+      <Name>ChangLogReport.rdl</Name>
+      <FullPath>ChangLogReport.rdl</FullPath>
     </ProjectItem>
+    <ResourceProjectItem>
+      <Name>SEQP_ChangeLog.sql</Name>
+      <FullPath>SEQP_ChangeLog.sql</FullPath>
+      <MimeType>application/octet-stream</MimeType>
+    </ResourceProjectItem>
   </Reports>
   <Configurations>
     <Configuration>
@@ -15,8 +20,8 @@
       <Platform>Win32</Platform>
       <Options>
         <OutputPath>bin\Debug</OutputPath>
-        <TargetServerVersion>SSRS2016</TargetServerVersion>
-        <TargetServerURL>http://localhost/ReportServer</TargetServerURL>
+        <TargetServerVersion>SSRS2008R2</TargetServerVersion>
+        <TargetServerURL>http://fabksep01/ReportServer</TargetServerURL>
         <TargetFolder>Report Project2</TargetFolder>
         <TargetMobileReportFolder>Mobile Reports</TargetMobileReportFolder>
         <TargetDataSourceFolder>Data Sources</TargetDataSourceFolder>

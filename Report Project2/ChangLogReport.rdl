@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2016/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner" xmlns:df="http://schemas.microsoft.com/sqlserver/reporting/2016/01/reportdefinition/defaultfontfamily" MustUnderstand="df">
+<Report MustUnderstand="df" xmlns="http://schemas.microsoft.com/sqlserver/reporting/2016/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner" xmlns:df="http://schemas.microsoft.com/sqlserver/reporting/2016/01/reportdefinition/defaultfontfamily">
   <df:DefaultFontFamily>Segoe UI</df:DefaultFontFamily>
   <AutoRefresh>0</AutoRefresh>
   <DataSources>
@@ -9,7 +9,7 @@
         <ConnectString>Data Source=fabksep01;Initial Catalog=Epicor905</ConnectString>
         <IntegratedSecurity>true</IntegratedSecurity>
       </ConnectionProperties>
-      <rd:SecurityType>None</rd:SecurityType>
+      <rd:SecurityType>Integrated</rd:SecurityType>
       <rd:DataSourceID>ae4ec180-9f97-4cea-9bcb-7ff4c93eb2d2</rd:DataSourceID>
     </DataSource>
   </DataSources>
@@ -107,19 +107,32 @@
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>Report1</Value>
+                    <Value>GL Polymers Changes Log as of: </Value>
                     <Style>
                       <FontFamily>Segoe UI Light</FontFamily>
-                      <FontSize>24pt</FontSize>
+                      <FontSize>28pt</FontSize>
+                      <FontWeight>Bold</FontWeight>
+                    </Style>
+                  </TextRun>
+                  <TextRun>
+                    <Value>=Globals!ExecutionTime</Value>
+                    <Style>
+                      <FontFamily>Segoe UI Light</FontFamily>
+                      <FontSize>28pt</FontSize>
                       <FontWeight>Bold</FontWeight>
                     </Style>
                   </TextRun>
                 </TextRuns>
-                <Style />
+                <SpaceBefore>10pt</SpaceBefore>
+                <SpaceAfter>5pt</SpaceAfter>
+                <Style>
+                  <TextAlign>Center</TextAlign>
+                </Style>
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>textbox1</rd:DefaultName>
-            <Height>0.43in</Height>
+            <Height>0.57931in</Height>
+            <Width>16in</Width>
             <Style>
               <PaddingLeft>2pt</PaddingLeft>
               <PaddingRight>2pt</PaddingRight>
@@ -136,44 +149,23 @@
               </TablixColumns>
               <TablixRows>
                 <TablixRow>
-                  <Height>0.93in</Height>
+                  <Height>1.26333in</Height>
                   <TablixCells>
                     <TablixCell>
                       <CellContents>
                         <Rectangle Name="List1_Contents">
                           <ReportItems>
-                            <Textbox Name="Company">
-                              <CanGrow>true</CanGrow>
-                              <KeepTogether>true</KeepTogether>
-                              <Paragraphs>
-                                <Paragraph>
-                                  <TextRuns>
-                                    <TextRun>
-                                      <Value>=Fields!Company.Value</Value>
-                                      <Style>
-                                        <FontFamily />
-                                        <FontSize>14pt</FontSize>
-                                      </Style>
-                                    </TextRun>
-                                  </TextRuns>
-                                  <Style />
-                                </Paragraph>
-                              </Paragraphs>
-                              <rd:DefaultName>Company</rd:DefaultName>
-                              <Height>0.27in</Height>
-                              <Style>
-                                <FontFamily />
-                                <PaddingLeft>2pt</PaddingLeft>
-                                <PaddingRight>2pt</PaddingRight>
-                                <PaddingTop>2pt</PaddingTop>
-                                <PaddingBottom>2pt</PaddingBottom>
-                              </Style>
-                            </Textbox>
                             <Tablix Name="table1">
                               <TablixBody>
                                 <TablixColumns>
                                   <TablixColumn>
-                                    <Width>1in</Width>
+                                    <Width>0.875in</Width>
+                                  </TablixColumn>
+                                  <TablixColumn>
+                                    <Width>0.69792in</Width>
+                                  </TablixColumn>
+                                  <TablixColumn>
+                                    <Width>0.73958in</Width>
                                   </TablixColumn>
                                   <TablixColumn>
                                     <Width>1in</Width>
@@ -185,7 +177,13 @@
                                     <Width>1in</Width>
                                   </TablixColumn>
                                   <TablixColumn>
+                                    <Width>0.84375in</Width>
+                                  </TablixColumn>
+                                  <TablixColumn>
                                     <Width>1in</Width>
+                                  </TablixColumn>
+                                  <TablixColumn>
+                                    <Width>0.6875in</Width>
                                   </TablixColumn>
                                   <TablixColumn>
                                     <Width>1in</Width>
@@ -194,31 +192,16 @@
                                     <Width>1in</Width>
                                   </TablixColumn>
                                   <TablixColumn>
-                                    <Width>1in</Width>
+                                    <Width>0.73958in</Width>
+                                  </TablixColumn>
+                                  <TablixColumn>
+                                    <Width>0.89583in</Width>
                                   </TablixColumn>
                                   <TablixColumn>
                                     <Width>1in</Width>
                                   </TablixColumn>
                                   <TablixColumn>
-                                    <Width>1in</Width>
-                                  </TablixColumn>
-                                  <TablixColumn>
-                                    <Width>1in</Width>
-                                  </TablixColumn>
-                                  <TablixColumn>
-                                    <Width>1in</Width>
-                                  </TablixColumn>
-                                  <TablixColumn>
-                                    <Width>1in</Width>
-                                  </TablixColumn>
-                                  <TablixColumn>
-                                    <Width>1in</Width>
-                                  </TablixColumn>
-                                  <TablixColumn>
-                                    <Width>1in</Width>
-                                  </TablixColumn>
-                                  <TablixColumn>
-                                    <Width>1in</Width>
+                                    <Width>3.15625in</Width>
                                   </TablixColumn>
                                 </TablixColumns>
                                 <TablixRows>
@@ -247,8 +230,6 @@
                                               </Paragraph>
                                             </Paragraphs>
                                             <rd:DefaultName>textbox2</rd:DefaultName>
-                                            <Height>0.22in</Height>
-                                            <Width>1in</Width>
                                             <Style>
                                               <Border>
                                                 <Color>LightGrey</Color>
@@ -274,7 +255,7 @@
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value>order Line</Value>
+                                                    <Value>Odr Line</Value>
                                                     <Style>
                                                       <FontFamily />
                                                       <FontSize>11pt</FontSize>
@@ -287,8 +268,6 @@
                                               </Paragraph>
                                             </Paragraphs>
                                             <rd:DefaultName>textbox3</rd:DefaultName>
-                                            <Height>0.22in</Height>
-                                            <Width>1in</Width>
                                             <Style>
                                               <Border>
                                                 <Color>LightGrey</Color>
@@ -327,8 +306,6 @@
                                               </Paragraph>
                                             </Paragraphs>
                                             <rd:DefaultName>textbox4</rd:DefaultName>
-                                            <Height>0.22in</Height>
-                                            <Width>1in</Width>
                                             <Style>
                                               <Border>
                                                 <Color>LightGrey</Color>
@@ -354,7 +331,7 @@
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value>Change Type</Value>
+                                                    <Value>Chng Type</Value>
                                                     <Style>
                                                       <FontFamily />
                                                       <FontSize>11pt</FontSize>
@@ -367,8 +344,6 @@
                                               </Paragraph>
                                             </Paragraphs>
                                             <rd:DefaultName>textbox5</rd:DefaultName>
-                                            <Height>0.22in</Height>
-                                            <Width>1in</Width>
                                             <Style>
                                               <Border>
                                                 <Color>LightGrey</Color>
@@ -407,8 +382,6 @@
                                               </Paragraph>
                                             </Paragraphs>
                                             <rd:DefaultName>textbox6</rd:DefaultName>
-                                            <Height>0.22in</Height>
-                                            <Width>1in</Width>
                                             <Style>
                                               <Border>
                                                 <Color>LightGrey</Color>
@@ -447,8 +420,6 @@
                                               </Paragraph>
                                             </Paragraphs>
                                             <rd:DefaultName>textbox7</rd:DefaultName>
-                                            <Height>0.22in</Height>
-                                            <Width>1in</Width>
                                             <Style>
                                               <Border>
                                                 <Color>LightGrey</Color>
@@ -490,8 +461,6 @@
                                               </Paragraph>
                                             </Paragraphs>
                                             <rd:DefaultName>textbox8</rd:DefaultName>
-                                            <Height>0.22in</Height>
-                                            <Width>1in</Width>
                                             <Style>
                                               <Border>
                                                 <Color>LightGrey</Color>
@@ -530,8 +499,6 @@
                                               </Paragraph>
                                             </Paragraphs>
                                             <rd:DefaultName>textbox9</rd:DefaultName>
-                                            <Height>0.22in</Height>
-                                            <Width>1in</Width>
                                             <Style>
                                               <Border>
                                                 <Color>LightGrey</Color>
@@ -570,8 +537,6 @@
                                               </Paragraph>
                                             </Paragraphs>
                                             <rd:DefaultName>textbox10</rd:DefaultName>
-                                            <Height>0.22in</Height>
-                                            <Width>1in</Width>
                                             <Style>
                                               <Border>
                                                 <Color>LightGrey</Color>
@@ -610,8 +575,6 @@
                                               </Paragraph>
                                             </Paragraphs>
                                             <rd:DefaultName>textbox11</rd:DefaultName>
-                                            <Height>0.22in</Height>
-                                            <Width>1in</Width>
                                             <Style>
                                               <Border>
                                                 <Color>LightGrey</Color>
@@ -637,7 +600,7 @@
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value>New Part</Value>
+                                                    <Value>Old Part</Value>
                                                     <Style>
                                                       <FontFamily />
                                                       <FontSize>11pt</FontSize>
@@ -650,8 +613,6 @@
                                               </Paragraph>
                                             </Paragraphs>
                                             <rd:DefaultName>textbox12</rd:DefaultName>
-                                            <Height>0.22in</Height>
-                                            <Width>1in</Width>
                                             <Style>
                                               <Border>
                                                 <Color>LightGrey</Color>
@@ -677,7 +638,7 @@
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value>New Qty</Value>
+                                                    <Value>Old Qty</Value>
                                                     <Style>
                                                       <FontFamily />
                                                       <FontSize>11pt</FontSize>
@@ -690,51 +651,6 @@
                                               </Paragraph>
                                             </Paragraphs>
                                             <rd:DefaultName>textbox13</rd:DefaultName>
-                                            <Height>0.22in</Height>
-                                            <Width>1in</Width>
-                                            <Style>
-                                              <Border>
-                                                <Color>LightGrey</Color>
-                                              </Border>
-                                              <BottomBorder>
-                                                <Style>Solid</Style>
-                                              </BottomBorder>
-                                              <FontFamily />
-                                              <PaddingLeft>2pt</PaddingLeft>
-                                              <PaddingRight>2pt</PaddingRight>
-                                              <PaddingTop>2pt</PaddingTop>
-                                              <PaddingBottom>2pt</PaddingBottom>
-                                            </Style>
-                                          </Textbox>
-                                        </CellContents>
-                                      </TablixCell>
-                                      <TablixCell>
-                                        <CellContents>
-                                          <Textbox Name="textbox14">
-                                            <CanGrow>true</CanGrow>
-                                            <KeepTogether>true</KeepTogether>
-                                            <Paragraphs>
-                                              <Paragraph>
-                                                <TextRuns>
-                                                  <TextRun>
-                                                    <Value>test</Value>
-                                                    <Style>
-                                                      <FontFamily />
-                                                      <FontSize>11pt</FontSize>
-                                                      <FontWeight>Bold</FontWeight>
-                                                      <Color>#666666</Color>
-                                                    </Style>
-                                                  </TextRun>
-                                                </TextRuns>
-                                                <Style>
-                                                  <FontFamily />
-                                                  <TextAlign>Right</TextAlign>
-                                                </Style>
-                                              </Paragraph>
-                                            </Paragraphs>
-                                            <rd:DefaultName>textbox14</rd:DefaultName>
-                                            <Height>0.22in</Height>
-                                            <Width>1in</Width>
                                             <Style>
                                               <Border>
                                                 <Color>LightGrey</Color>
@@ -760,7 +676,7 @@
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value>New Plant</Value>
+                                                    <Value>Old Plant</Value>
                                                     <Style>
                                                       <FontFamily />
                                                       <FontSize>11pt</FontSize>
@@ -773,8 +689,6 @@
                                               </Paragraph>
                                             </Paragraphs>
                                             <rd:DefaultName>textbox15</rd:DefaultName>
-                                            <Height>0.22in</Height>
-                                            <Width>1in</Width>
                                             <Style>
                                               <Border>
                                                 <Color>LightGrey</Color>
@@ -800,7 +714,7 @@
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value>New Date</Value>
+                                                    <Value>Old Date</Value>
                                                     <Style>
                                                       <FontFamily />
                                                       <FontSize>11pt</FontSize>
@@ -813,8 +727,6 @@
                                               </Paragraph>
                                             </Paragraphs>
                                             <rd:DefaultName>textbox16</rd:DefaultName>
-                                            <Height>0.22in</Height>
-                                            <Width>1in</Width>
                                             <Style>
                                               <Border>
                                                 <Color>LightGrey</Color>
@@ -853,8 +765,6 @@
                                               </Paragraph>
                                             </Paragraphs>
                                             <rd:DefaultName>textbox17</rd:DefaultName>
-                                            <Height>0.22in</Height>
-                                            <Width>1in</Width>
                                             <Style>
                                               <Border>
                                                 <Color>LightGrey</Color>
@@ -874,7 +784,7 @@
                                     </TablixCells>
                                   </TablixRow>
                                   <TablixRow>
-                                    <Height>0.21in</Height>
+                                    <Height>0.54333in</Height>
                                     <TablixCells>
                                       <TablixCell>
                                         <CellContents>
@@ -889,6 +799,7 @@
                                                     <Value>=Fields!OrderNum.Value</Value>
                                                     <Style>
                                                       <FontFamily />
+                                                      <FontWeight>Bold</FontWeight>
                                                       <Color>#333333</Color>
                                                     </Style>
                                                   </TextRun>
@@ -897,8 +808,6 @@
                                               </Paragraph>
                                             </Paragraphs>
                                             <rd:DefaultName>OrderNum</rd:DefaultName>
-                                            <Height>0.21in</Height>
-                                            <Width>1in</Width>
                                             <Style>
                                               <Border>
                                                 <Color>LightGrey</Color>
@@ -936,8 +845,6 @@
                                               </Paragraph>
                                             </Paragraphs>
                                             <rd:DefaultName>orderLine</rd:DefaultName>
-                                            <Height>0.21in</Height>
-                                            <Width>1in</Width>
                                             <Style>
                                               <Border>
                                                 <Color>LightGrey</Color>
@@ -975,8 +882,6 @@
                                               </Paragraph>
                                             </Paragraphs>
                                             <rd:DefaultName>RelNum</rd:DefaultName>
-                                            <Height>0.21in</Height>
-                                            <Width>1in</Width>
                                             <Style>
                                               <Border>
                                                 <Color>LightGrey</Color>
@@ -1013,8 +918,6 @@
                                               </Paragraph>
                                             </Paragraphs>
                                             <rd:DefaultName>ChangeType</rd:DefaultName>
-                                            <Height>0.21in</Height>
-                                            <Width>1in</Width>
                                             <Style>
                                               <Border>
                                                 <Color>LightGrey</Color>
@@ -1051,8 +954,6 @@
                                               </Paragraph>
                                             </Paragraphs>
                                             <rd:DefaultName>Order_Lin_Rel</rd:DefaultName>
-                                            <Height>0.21in</Height>
-                                            <Width>1in</Width>
                                             <Style>
                                               <Border>
                                                 <Color>LightGrey</Color>
@@ -1089,8 +990,6 @@
                                               </Paragraph>
                                             </Paragraphs>
                                             <rd:DefaultName>PartNum</rd:DefaultName>
-                                            <Height>0.21in</Height>
-                                            <Width>1in</Width>
                                             <Style>
                                               <Border>
                                                 <Color>LightGrey</Color>
@@ -1127,8 +1026,6 @@
                                               </Paragraph>
                                             </Paragraphs>
                                             <rd:DefaultName>OrderQty</rd:DefaultName>
-                                            <Height>0.21in</Height>
-                                            <Width>1in</Width>
                                             <Style>
                                               <Border>
                                                 <Color>LightGrey</Color>
@@ -1165,8 +1062,6 @@
                                               </Paragraph>
                                             </Paragraphs>
                                             <rd:DefaultName>OrderDate</rd:DefaultName>
-                                            <Height>0.21in</Height>
-                                            <Width>1in</Width>
                                             <Style>
                                               <Border>
                                                 <Color>LightGrey</Color>
@@ -1203,8 +1098,6 @@
                                               </Paragraph>
                                             </Paragraphs>
                                             <rd:DefaultName>plant</rd:DefaultName>
-                                            <Height>0.21in</Height>
-                                            <Width>1in</Width>
                                             <Style>
                                               <Border>
                                                 <Color>LightGrey</Color>
@@ -1241,8 +1134,6 @@
                                               </Paragraph>
                                             </Paragraphs>
                                             <rd:DefaultName>ChangeDate</rd:DefaultName>
-                                            <Height>0.21in</Height>
-                                            <Width>1in</Width>
                                             <Style>
                                               <Border>
                                                 <Color>LightGrey</Color>
@@ -1279,8 +1170,6 @@
                                               </Paragraph>
                                             </Paragraphs>
                                             <rd:DefaultName>NewPart</rd:DefaultName>
-                                            <Height>0.21in</Height>
-                                            <Width>1in</Width>
                                             <Style>
                                               <Border>
                                                 <Color>LightGrey</Color>
@@ -1317,46 +1206,6 @@
                                               </Paragraph>
                                             </Paragraphs>
                                             <rd:DefaultName>NewQty</rd:DefaultName>
-                                            <Height>0.21in</Height>
-                                            <Width>1in</Width>
-                                            <Style>
-                                              <Border>
-                                                <Color>LightGrey</Color>
-                                              </Border>
-                                              <BottomBorder>
-                                                <Style>Solid</Style>
-                                              </BottomBorder>
-                                              <FontFamily />
-                                              <PaddingLeft>2pt</PaddingLeft>
-                                              <PaddingRight>2pt</PaddingRight>
-                                              <PaddingTop>2pt</PaddingTop>
-                                              <PaddingBottom>2pt</PaddingBottom>
-                                            </Style>
-                                          </Textbox>
-                                        </CellContents>
-                                      </TablixCell>
-                                      <TablixCell>
-                                        <CellContents>
-                                          <Textbox Name="test">
-                                            <CanGrow>true</CanGrow>
-                                            <KeepTogether>true</KeepTogether>
-                                            <Paragraphs>
-                                              <Paragraph>
-                                                <TextRuns>
-                                                  <TextRun>
-                                                    <Value>=Fields!test.Value</Value>
-                                                    <Style>
-                                                      <FontFamily />
-                                                      <Color>#333333</Color>
-                                                    </Style>
-                                                  </TextRun>
-                                                </TextRuns>
-                                                <Style />
-                                              </Paragraph>
-                                            </Paragraphs>
-                                            <rd:DefaultName>test</rd:DefaultName>
-                                            <Height>0.21in</Height>
-                                            <Width>1in</Width>
                                             <Style>
                                               <Border>
                                                 <Color>LightGrey</Color>
@@ -1393,8 +1242,6 @@
                                               </Paragraph>
                                             </Paragraphs>
                                             <rd:DefaultName>NewPlant</rd:DefaultName>
-                                            <Height>0.21in</Height>
-                                            <Width>1in</Width>
                                             <Style>
                                               <Border>
                                                 <Color>LightGrey</Color>
@@ -1431,8 +1278,6 @@
                                               </Paragraph>
                                             </Paragraphs>
                                             <rd:DefaultName>NewDate</rd:DefaultName>
-                                            <Height>0.21in</Height>
-                                            <Width>1in</Width>
                                             <Style>
                                               <Border>
                                                 <Color>LightGrey</Color>
@@ -1469,8 +1314,6 @@
                                               </Paragraph>
                                             </Paragraphs>
                                             <rd:DefaultName>LogText</rd:DefaultName>
-                                            <Height>0.21in</Height>
-                                            <Width>1in</Width>
                                             <Style>
                                               <Border>
                                                 <Color>LightGrey</Color>
@@ -1493,7 +1336,6 @@
                               </TablixBody>
                               <TablixColumnHierarchy>
                                 <TablixMembers>
-                                  <TablixMember />
                                   <TablixMember />
                                   <TablixMember />
                                   <TablixMember />
@@ -1575,10 +1417,41 @@
                               </TablixRowHierarchy>
                               <DataSetName>DataSet1</DataSetName>
                               <Top>0.5in</Top>
+                              <Height>0.76333in</Height>
+                              <Width>15.63542in</Width>
                               <Style>
                                 <FontFamily />
                               </Style>
                             </Tablix>
+                            <Textbox Name="Company">
+                              <CanGrow>true</CanGrow>
+                              <KeepTogether>true</KeepTogether>
+                              <Paragraphs>
+                                <Paragraph>
+                                  <TextRuns>
+                                    <TextRun>
+                                      <Value />
+                                      <Style>
+                                        <FontFamily />
+                                        <FontSize>14pt</FontSize>
+                                      </Style>
+                                    </TextRun>
+                                  </TextRuns>
+                                  <Style />
+                                </Paragraph>
+                              </Paragraphs>
+                              <rd:DefaultName>Company</rd:DefaultName>
+                              <Height>0.27in</Height>
+                              <Width>16in</Width>
+                              <ZIndex>1</ZIndex>
+                              <Style>
+                                <FontFamily />
+                                <PaddingLeft>2pt</PaddingLeft>
+                                <PaddingRight>2pt</PaddingRight>
+                                <PaddingTop>2pt</PaddingTop>
+                                <PaddingBottom>2pt</PaddingBottom>
+                              </Style>
+                            </Textbox>
                           </ReportItems>
                           <KeepTogether>true</KeepTogether>
                           <Style />
@@ -1597,21 +1470,50 @@
             <TablixRowHierarchy>
               <TablixMembers>
                 <TablixMember>
-                  <Group Name="list1_Company">
+                  <Group Name="plant">
                     <GroupExpressions>
-                      <GroupExpression>=Fields!Company.Value</GroupExpression>
+                      <GroupExpression>=Fields!plant.Value</GroupExpression>
                     </GroupExpressions>
-                    <PageBreak>
-                      <BreakLocation>Between</BreakLocation>
-                    </PageBreak>
                   </Group>
                   <SortExpressions>
                     <SortExpression>
-                      <Value>=Fields!Company.Value</Value>
+                      <Value>=Fields!plant.Value</Value>
                     </SortExpression>
                   </SortExpressions>
-                  <DataElementOutput>Output</DataElementOutput>
-                  <KeepTogether>true</KeepTogether>
+                  <TablixHeader>
+                    <Size>1.16667in</Size>
+                    <CellContents>
+                      <Textbox Name="plant1">
+                        <CanGrow>true</CanGrow>
+                        <KeepTogether>true</KeepTogether>
+                        <Paragraphs>
+                          <Paragraph>
+                            <TextRuns>
+                              <TextRun>
+                                <Value>=Fields!plant.Value</Value>
+                                <Style>
+                                  <FontFamily>Arial</FontFamily>
+                                  <FontSize>20pt</FontSize>
+                                  <FontWeight>Bold</FontWeight>
+                                </Style>
+                              </TextRun>
+                            </TextRuns>
+                            <Style />
+                          </Paragraph>
+                        </Paragraphs>
+                        <rd:DefaultName>plant1</rd:DefaultName>
+                        <Style>
+                          <PaddingLeft>2pt</PaddingLeft>
+                          <PaddingRight>2pt</PaddingRight>
+                          <PaddingTop>2pt</PaddingTop>
+                          <PaddingBottom>2pt</PaddingBottom>
+                        </Style>
+                      </Textbox>
+                    </CellContents>
+                  </TablixHeader>
+                  <TablixMembers>
+                    <TablixMember />
+                  </TablixMembers>
                 </TablixMember>
               </TablixMembers>
             </TablixRowHierarchy>
@@ -1619,16 +1521,19 @@
             <PageBreak>
               <BreakLocation>End</BreakLocation>
             </PageBreak>
-            <Top>0.43in</Top>
+            <Top>0.64875in</Top>
+            <Height>1.26333in</Height>
+            <Width>17.16667in</Width>
+            <ZIndex>1</ZIndex>
             <Style>
               <FontSize>14pt</FontSize>
             </Style>
           </Tablix>
         </ReportItems>
-        <Height>1.36in</Height>
+        <Height>2.14583in</Height>
         <Style />
       </Body>
-      <Width>16in</Width>
+      <Width>17.16667in</Width>
       <Page>
         <LeftMargin>1in</LeftMargin>
         <RightMargin>1in</RightMargin>
@@ -1646,6 +1551,6 @@
   </ReportParametersLayout>
   <Language>en-US</Language>
   <ConsumeContainerWhitespace>true</ConsumeContainerWhitespace>
-  <rd:ReportUnitType>Invalid</rd:ReportUnitType>
+  <rd:ReportUnitType>Inch</rd:ReportUnitType>
   <rd:ReportID>8695ed65-2b63-4a1c-9600-9aaf98e05adc</rd:ReportID>
 </Report>
