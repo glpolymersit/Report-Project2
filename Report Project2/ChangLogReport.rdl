@@ -69,24 +69,24 @@
           <DataField>ChangeDate</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="NewPart">
-          <DataField>NewPart</DataField>
+        <Field Name="OldPart">
+          <DataField>OldPart</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="NewQty">
-          <DataField>NewQty</DataField>
+        <Field Name="OldQty">
+          <DataField>OldQty</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
         <Field Name="test">
           <DataField>test</DataField>
           <rd:TypeName>System.Int64</rd:TypeName>
         </Field>
-        <Field Name="NewPlant">
-          <DataField>NewPlant</DataField>
+        <Field Name="OldPlant">
+          <DataField>OldPlant</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="NewDate">
-          <DataField>NewDate</DataField>
+        <Field Name="OldDate">
+          <DataField>OldDate</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
         <Field Name="LogText">
@@ -132,7 +132,7 @@
             </Paragraphs>
             <rd:DefaultName>textbox1</rd:DefaultName>
             <Height>0.57931in</Height>
-            <Width>16in</Width>
+            <Width>15.96875in</Width>
             <Style>
               <PaddingLeft>2pt</PaddingLeft>
               <PaddingRight>2pt</PaddingRight>
@@ -1152,14 +1152,14 @@
                                       </TablixCell>
                                       <TablixCell>
                                         <CellContents>
-                                          <Textbox Name="NewPart">
+                                          <Textbox Name="OldPart">
                                             <CanGrow>true</CanGrow>
                                             <KeepTogether>true</KeepTogether>
                                             <Paragraphs>
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value>=Fields!NewPart.Value</Value>
+                                                    <Value>=Fields!OldPart.Value</Value>
                                                     <Style>
                                                       <FontFamily />
                                                       <Color>#333333</Color>
@@ -1169,7 +1169,7 @@
                                                 <Style />
                                               </Paragraph>
                                             </Paragraphs>
-                                            <rd:DefaultName>NewPart</rd:DefaultName>
+                                            <rd:DefaultName>OldPart</rd:DefaultName>
                                             <Style>
                                               <Border>
                                                 <Color>LightGrey</Color>
@@ -1188,14 +1188,14 @@
                                       </TablixCell>
                                       <TablixCell>
                                         <CellContents>
-                                          <Textbox Name="NewQty">
+                                          <Textbox Name="OldQty">
                                             <CanGrow>true</CanGrow>
                                             <KeepTogether>true</KeepTogether>
                                             <Paragraphs>
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value>=Fields!NewQty.Value</Value>
+                                                    <Value>=Fields!OldQty.Value</Value>
                                                     <Style>
                                                       <FontFamily />
                                                       <Color>#333333</Color>
@@ -1205,7 +1205,7 @@
                                                 <Style />
                                               </Paragraph>
                                             </Paragraphs>
-                                            <rd:DefaultName>NewQty</rd:DefaultName>
+                                            <rd:DefaultName>OldQty</rd:DefaultName>
                                             <Style>
                                               <Border>
                                                 <Color>LightGrey</Color>
@@ -1224,14 +1224,14 @@
                                       </TablixCell>
                                       <TablixCell>
                                         <CellContents>
-                                          <Textbox Name="NewPlant">
+                                          <Textbox Name="OldPlant">
                                             <CanGrow>true</CanGrow>
                                             <KeepTogether>true</KeepTogether>
                                             <Paragraphs>
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value>=Fields!NewPlant.Value</Value>
+                                                    <Value>=Fields!OldPlant.Value</Value>
                                                     <Style>
                                                       <FontFamily />
                                                       <Color>#333333</Color>
@@ -1241,7 +1241,7 @@
                                                 <Style />
                                               </Paragraph>
                                             </Paragraphs>
-                                            <rd:DefaultName>NewPlant</rd:DefaultName>
+                                            <rd:DefaultName>OldPlant</rd:DefaultName>
                                             <Style>
                                               <Border>
                                                 <Color>LightGrey</Color>
@@ -1260,14 +1260,14 @@
                                       </TablixCell>
                                       <TablixCell>
                                         <CellContents>
-                                          <Textbox Name="NewDate">
+                                          <Textbox Name="OldDate">
                                             <CanGrow>true</CanGrow>
                                             <KeepTogether>true</KeepTogether>
                                             <Paragraphs>
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value>=Fields!NewDate.Value</Value>
+                                                    <Value>=Fields!OldDate.Value</Value>
                                                     <Style>
                                                       <FontFamily />
                                                       <Color>#333333</Color>
@@ -1277,7 +1277,7 @@
                                                 <Style />
                                               </Paragraph>
                                             </Paragraphs>
-                                            <rd:DefaultName>NewDate</rd:DefaultName>
+                                            <rd:DefaultName>OldDate</rd:DefaultName>
                                             <Style>
                                               <Border>
                                                 <Color>LightGrey</Color>
@@ -1418,7 +1418,7 @@
                               <DataSetName>DataSet1</DataSetName>
                               <Top>0.5in</Top>
                               <Height>0.76333in</Height>
-                              <Width>15.63542in</Width>
+                              <Width>15.63541in</Width>
                               <Style>
                                 <FontFamily />
                               </Style>

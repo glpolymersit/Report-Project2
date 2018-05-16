@@ -13,6 +13,16 @@
       <FullPath>SEQP_ChangeLog.sql</FullPath>
       <MimeType>application/octet-stream</MimeType>
     </ResourceProjectItem>
+    <ResourceProjectItem>
+      <Name>SEQP_ChangeLog201805162122.sql</Name>
+      <FullPath>SEQP_ChangeLog201805162122.sql</FullPath>
+      <MimeType>application/octet-stream</MimeType>
+    </ResourceProjectItem>
+    <ResourceProjectItem>
+      <Name>SEQP_ChangeLog201805162132.sql</Name>
+      <FullPath>SEQP_ChangeLog201805162132.sql</FullPath>
+      <MimeType>application/octet-stream</MimeType>
+    </ResourceProjectItem>
   </Reports>
   <Configurations>
     <Configuration>
